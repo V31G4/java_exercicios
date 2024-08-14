@@ -2,20 +2,16 @@ package ttet.exerciciosjava.exercicioavancado02;
 import java.util.Objects;
 
 public class Usuario {
-    private int id;
-    private String nome;
-    private String email;
-    private int idade;
+    private final int id;
+    private final String nome;
+    private final String email;
+    private final int idade;
 
     public Usuario(int id, String nome, String email, int idade) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.idade = idade;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getNome() {

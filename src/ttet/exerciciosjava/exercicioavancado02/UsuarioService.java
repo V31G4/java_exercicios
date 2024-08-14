@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class UsuarioService {
-    private List<Usuario> usuarios = new ArrayList<>();
+    private final List<Usuario> usuarios = new ArrayList<>();
 
     public void adicionarUsuario(Usuario usuario) {
         if (usuario.getNome() == null || usuario.getNome().isEmpty() ||
