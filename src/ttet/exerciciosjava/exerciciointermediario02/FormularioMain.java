@@ -13,40 +13,40 @@ public class FormularioMain {
         do {
             System.out.print("Digite seu Nome: ");
             nome = scanner.nextLine();
-            if (!formulario.verificarNome(nome)) {
+            if (formulario.verificarNome(nome)) {
                 System.out.println("Nome inválido. Por favor, insira um nome válido.");
             }
-        } while (!formulario.verificarNome(nome));
+        } while (formulario.verificarNome(nome));
         dadosCadastrais.add("Nome: " + nome);
 
         String sobrenome;
         do {
             System.out.print("Digite seu Sobrenome: ");
             sobrenome = scanner.nextLine();
-            if (!formulario.verificarSobrenome(sobrenome)) {
+            if (formulario.verificarSobrenome(sobrenome)) {
                 System.out.println("Sobrenome inválido. Por favor, insira um sobrenome válido.");
             }
-        } while (!formulario.verificarSobrenome(sobrenome));
+        } while (formulario.verificarSobrenome(sobrenome));
         dadosCadastrais.add("Sobrenome: " + sobrenome);
 
         String cpf;
         do {
             System.out.print("Digite seu CPF (xxx.xxx.xxx-xx): ");
             cpf = scanner.nextLine();
-            if (!formulario.verificarCPF(cpf)) {
+            if (formulario.verificarCPF(cpf)) {
                 System.out.println("CPF inválido. Por favor, insira um CPF válido no formato xxx.xxx.xxx-xx.");
             }
-        } while (!formulario.verificarCPF(cpf));
+        } while (formulario.verificarCPF(cpf));
         dadosCadastrais.add("CPF: " + cpf);
 
         String email;
         do {
             System.out.print("Digite seu Email: ");
             email = scanner.nextLine();
-            if (!formulario.verificarEmail(email)) {
+            if (formulario.verificarEmail(email)) {
                 System.out.println("Email inválido. Por favor, insira um email válido.");
             }
-        } while (!formulario.verificarEmail(email));
+        } while (formulario.verificarEmail(email));
         dadosCadastrais.add("Email: " + email);
 
         System.out.println("\nDados Cadastrais:");
