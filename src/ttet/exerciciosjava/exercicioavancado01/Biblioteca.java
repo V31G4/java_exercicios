@@ -51,7 +51,7 @@ class Biblioteca implements Gerenciavel {
             System.out.println("6. Sair");
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Consumir a nova linha
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1:

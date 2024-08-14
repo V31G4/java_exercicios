@@ -17,8 +17,4 @@ abstract class ItemBiblioteca {
     public String getTitulo() {
         return titulo;
     }
-
-    public boolean isDisponivel() {
-        return disponivel;
-    }
 }
