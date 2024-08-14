@@ -18,7 +18,7 @@ public class Formulario {
     }
 
     public boolean verificarEmail(String email) {
-        String regex = "^[\\w-\\.]+@[\\w-\\.]+\\.[a-zA-Z]{2,7}$";
+        String regex = "^[\\w-.]+@[\\w-.]+\\.[a-zA-Z]{2,7}$";
         return email.matches(regex);
     }
 }
